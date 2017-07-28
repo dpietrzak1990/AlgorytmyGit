@@ -34,6 +34,12 @@ public class AlgorithmFactory {
                 return new SortowaniePrzezZliczanie();
             case "krzyzowka":
                 return new Krzyzowka();
+            case "najwiekszywspolnydzielnik":
+                return new NajwiekszyWspolnyDzielnik();
+            case "generatorplanszywarcab":
+                return new GeneratorPlanszyWarcab();
+            case "dominanta":
+                return new Dominanta();
             default:
                 throw new Exception("Nie ma takiego algorytmu!");
         }

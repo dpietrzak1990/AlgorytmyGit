@@ -25,12 +25,5 @@ public class SortowaniePrzezZliczanie extends AbstractAlgorithm {
         }
 
 
-
-
-
-
-
-
-
     }
 }
