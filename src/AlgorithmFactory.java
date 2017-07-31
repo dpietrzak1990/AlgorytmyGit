@@ -40,6 +40,14 @@ public class AlgorithmFactory {
                 return new GeneratorPlanszyWarcab();
             case "dominanta":
                 return new Dominanta();
+            case "datawielkanocy":
+                return new DataWielkanocy();
+            case "pusty":
+                return new Pusty();
+            case "wyszukajminmax":
+                return new WyszukajMinMax();
+            case "lider":
+                return new Lider();
             default:
                 throw new Exception("Nie ma takiego algorytmu!");
         }

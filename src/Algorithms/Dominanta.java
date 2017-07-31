@@ -32,7 +32,7 @@ public class Dominanta extends AbstractAlgorithm {
                 wynik = i;
         }
 
-        System.out.printf("Dominanta wynosi: %d baranie", wynik);
+        System.out.printf("Dominanta wynosi: %d", wynik);
     }
 
 
