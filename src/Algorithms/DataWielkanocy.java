@@ -14,17 +14,35 @@ public class DataWielkanocy extends AbstractAlgorithm {
 
         int rok = Integer.parseInt(input[1]);
 
-        float a = rok % 100;
-        float b1 = rok/100; /// rzutowania
-        int b = (int)b1;
-        float c = rok % 100;
-        float d = (int)(b/100)/4;
-        float e = d%4;
-        //float f = (int)(())
+        int a = rok % 100;
+        int b = (int) rok / 100;
+        int c = rok % 100;
+        float d1 = (rok / 100) / 4;
+        int d = (int) d1;
+        int e = d % 4;
+        float f1 = ((b + 8) / 25);
+        int f = (int) f1;
+        float g1 = ((b - f + 1) / 3);
+        int g = (int) g1;
+        int h = (19 * a + b - d - g + 15) % 30;
+        float i1 = (rok % 100) / 4;
+        int i = (int) i1;
+        int k = c % 4;
+        int l = (32 + 2 * e + 2 * i - h - k) % 7;
+        float m1 = (a + 11 * h + 22 * l) / 451;
+        int m = (int) m1;
+        int p = (h + l - 7 * m + 114) % 31;
+
+        int DzienWielkanocy = p + 1;
+        float MiesiacWielkanocy = ((int) (h + l - 7 * m + 114) / 31);
 
 
+        if(MiesiacWielkanocy == 4) {
+            System.out.println(DzienWielkanocy + " kwiecien");
+        }else {
+            System.out.println(DzienWielkanocy + "marzec");
 
 
-
+        }
     }
 }

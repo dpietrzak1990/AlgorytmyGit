@@ -48,6 +48,10 @@ public class AlgorithmFactory {
                 return new WyszukajMinMax();
             case "lider":
                 return new Lider();
+            case "testowanielisty":
+                return new TestowanieListy();
+            case "kolory":
+                return new Kolory();
             default:
                 throw new Exception("Nie ma takiego algorytmu!");
         }

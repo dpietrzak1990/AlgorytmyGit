@@ -14,7 +14,7 @@ public class Lider extends AbstractAlgorithm {
         int n = input.length - 1;
         int[] lider = new int [n];
 
-        
+
 
 
 
