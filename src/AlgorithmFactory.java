@@ -1,4 +1,5 @@
 import Algorithms.*;
+import Struktury.Kopiec;
 
 /**
  * Created by jake on 21.07.2017.
@@ -54,6 +55,12 @@ public class AlgorithmFactory {
                 return new Kolory();
             case "prostedrzewo":
                 return new ProsteDrzewo();
+            case "testowaniekopca":
+                return new TestowanieKopca();
+            case "przeliczaniesystemow":
+                return new PrzeliczanieSystemow();
+            case "onp":
+                return new ONP();
             default:
                 throw new Exception("Nie ma takiego algorytmu!");
         }
