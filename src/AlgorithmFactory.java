@@ -1,5 +1,4 @@
 import Algorithms.*;
-import Struktury.Kopiec;
 
 /**
  * Created by jake on 21.07.2017.
@@ -41,6 +40,8 @@ public class AlgorithmFactory {
                 return new GeneratorPlanszyWarcab();
             case "dominanta":
                 return new Dominanta();
+            case "sprawdzian":
+                return new Sprawdzian();
             case "datawielkanocy":
                 return new DataWielkanocy();
             case "pusty":
@@ -61,6 +62,10 @@ public class AlgorithmFactory {
                 return new PrzeliczanieSystemow();
             case "onp":
                 return new ONP();
+            case "zmienneitablice":
+                return new ZmienneITablice();
+            case "arraylist":
+                return new MArrayList();
             default:
                 throw new Exception("Nie ma takiego algorytmu!");
         }
