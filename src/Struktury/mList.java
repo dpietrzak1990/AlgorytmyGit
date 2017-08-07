@@ -116,7 +116,34 @@ public class mList {
             after.next =p;
             list.counter++;
         }
-        }
     }
+    public void deleteElement(int elementToDelete, mList list) {
+        Element toDelete = list.getElementListForward(elementToDelete, list);
+
+        list.counter--;
+
+        if (toDelete.prev == null) {                // usunelismy element z poczatku i konca oraz jednoczesnie srodka
+            _head = toDelete.next;
+            toDelete.next.prev = null;
+        }
+        else {
+            toDelete.prev.next = toDelete.next;
+        }
+        if(toDelete.next == null) {
+            _tail = toDelete.prev;
+            toDelete.prev.next = null;
+        }else{
+            toDelete.next.prev = toDelete.prev;
+        }
+
+        toDelete=null;
+
+
+
+
+    }
+
+
+}
 
 
