@@ -66,6 +66,8 @@ public class AlgorithmFactory {
                 return new ZmienneITablice();
             case "arraylist":
                 return new MArrayList();
+            case "nowaonp":
+                return new NowaONP();
             default:
                 throw new Exception("Nie ma takiego algorytmu!");
         }
