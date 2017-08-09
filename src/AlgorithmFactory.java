@@ -68,6 +68,8 @@ public class AlgorithmFactory {
                 return new MArrayList();
             case "nowaonp":
                 return new NowaONP();
+            case "najmniejszawspolnawielokrotnosc":
+                return new najmniejszaWspolnaWielokrotnosc();
             default:
                 throw new Exception("Nie ma takiego algorytmu!");
         }
